@@ -1,31 +1,47 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica', 'Arial', sans-serif; }
-body { 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica', Arial, sans-serif; }
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #0a1a2f url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2000') no-repeat center center/cover;
     color: white;
     text-align: center;
 }
-.overlay { 
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+.overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     background: linear-gradient(135deg, rgba(0, 86, 150, 0.9) 0%, rgba(10, 26, 47, 0.95) 100%);
     z-index: 1;
 }
 .container { position: relative; z-index: 2; width: 90%; max-width: 800px; }
-.logo { max-width: 250px; background: white; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
-.brand { font-size: 3rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
-.brand span { font-weight: 300; font-size: 1.5rem; color: #00a8e8; }
-.tagline { color: #00a8e8; letter-spacing: 5px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 30px; font-weight: bold; }
+.logo { max-width: 250px; background: white; padding: 15px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.brand { font-size: 3rem; text-transform: uppercase; margin-bottom: 10px; }
+.brand span { font-weight: 300; color: #00a8e8; }
+.construction-badge {
+    background: #ffcc00;
+    color: #000;
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.tagline { color: #00a8e8; letter-spacing: 5px; text-transform: uppercase; font-size: 0.9rem; font-weight: bold; margin-bottom: 30px; }
 .countdown { display: flex; justify-content: center; gap: 15px; margin: 30px 0; }
-.unit { background: rgba(255, 255, 255, 0.95); color: #005696; padding: 15px; border-radius: 10px; min-width: 90px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+.unit { background: white; color: #005696; padding: 15px; border-radius: 10px; min-width: 90px; }
 .unit span { font-size: 2.2rem; font-weight: bold; display: block; }
 .unit p { font-size: 0.65rem; color: #333; text-transform: uppercase; font-weight: bold; }
-.contact-section { margin-top: 40px; background: rgba(0,0,0,0.3); padding: 25px; border-radius: 15px; }
-.email-link { color: #00a8e8; font-size: 1.3rem; text-decoration: none; font-weight: bold; display: block; margin: 10px 0; }
-.btn { 
-    display: inline-block; background: #00a8e8; color: white; padding: 12px 30px; 
-    border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s;
+.contact-box { margin-top: 30px; padding: 20px; border-top: 1px solid rgba(255,255,255,0.2); }
+.email { color: #00a8e8; font-size: 1.2rem; text-decoration: none; font-weight: bold; display: block; margin-bottom: 15px; }
+.btn-mail {
+    display: inline-block;
+    background: #00a8e8;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
 }
-.btn:hover { background: white; color: #005696; }
+.btn-mail:hover { background: white; color: #005696; }

@@ -1,7 +1,7 @@
-const targetDate = new Date(); targetDate.setDate(targetDate.getDate() + 30);
-function updateTimer() {
+const target = new Date(); target.setDate(target.getDate() + 30);
+function update() {
     const now = new Date();
-    const diff = targetDate - now;
+    const diff = target - now;
     const d = Math.floor(diff / (1000*60*60*24));
     const h = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
     const m = Math.floor((diff % (1000*60*60)) / (1000*60));
@@ -11,4 +11,4 @@ function updateTimer() {
     document.getElementById('minutes').innerText = m < 10 ? '0'+m : m;
     document.getElementById('seconds').innerText = s < 10 ? '0'+s : s;
 }
-setInterval(updateTimer, 1000); updateTimer();
+setInterval(update, 1000); update();
